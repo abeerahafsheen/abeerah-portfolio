@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abeerah — Writing Portfolio for Fiverr</title>
+  <meta name="description" content="Abeerah — collection of writing samples, gig descriptions, and contact to help get work on Fiverr." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --wh: #25D366;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071022 0%, #071827 100%);color:#e6eef8;}
+    .container{max-width:1100px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:20px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+    .card{background:linear-gradient(180deg,var(--glass),var(--glass-2));padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .profile{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(180deg,#e2e8f0 0%, #c7d2fe 100%);display:flex;align-items:center;justify-content:center;color:#071022;font-weight:700;font-size:28px}
+    .meta small{color:var(--muted)}
+    .actions{margin-top:16px;display:flex;gap:10px}
+    .btn{background:linear-gradient(90deg,var(--accent),#4f46e5);border:none;padding:10px 14px;border-radius:10px;color:white;font-weight:600;cursor:pointer;text-decoration:none}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .writings{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .writing-item{padding:16px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+    .writing-item h3{margin:0 0 8px}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(124,58,237,0.12);color:var(--accent);font-weight:600;font-size:12px}
+
+    .right-card .download{display:flex;flex-direction:column;gap:8px}
+    .sample{display:flex;gap:12px;align-items:flex-start}
+    .sample .dot{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);font-weight:700}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px;padding:30px 0}
+
+    /* WhatsApp floating button */
+    .whatsapp-btn{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:10px;background:var(--wh);color:#052215;padding:12px 14px;border-radius:50px;box-shadow:0 10px 30px rgba(37,211,102,0.12);text-decoration:none;font-weight:700}
+    .whatsapp-btn svg{width:22px;height:22px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .writings{grid-template-columns:1fr}
+      .container{padding:18px;margin:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>Abeerah — Writing Portfolio</h1>
+          <p class="lead">Professional Fiverr-ready gig descriptions, articles, product copy, CVs, and more — ready to use and customize.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#writings">Writings</a>
+        <a href="#samples">Samples</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="profile">
+          <div class="avatar">AB</div>
+          <div class="meta">
+            <div style="display:flex;align-items:center;gap:8px"><strong>Abeerah</strong><small style="color:var(--muted)">— Freelance Writer</small></div>
+            <small style="display:block;color:var(--muted);margin-top:6px;max-width:560px">I write clear, persuasive, and SEO-friendly content for Fiverr gigs, product descriptions, blog posts, and professional documents. Delivery in Urdu & English.</small>
+            <div class="actions">
+              <a class="btn" href="https://www.fiverr.com/your-fiverr-profile" target="_blank" rel="noopener">Open Fiverr Profile</a>
+              <a class="btn secondary" href="#contact">Hire / Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <div class="tag">Gig descriptions</div>
+          <div class="tag">Product copy</div>
+          <div class="tag">Article & blog</div>
+          <div class="tag">CV & cover letters</div>
+          <div class="tag">Urdu & English</div>
+        </div>
+
+        <div style="margin-top:20px">
+          <h3 id="writings">All Writings (organized)</h3>
+          <div class="writings">
+            <article class="writing-item">
+              <h3>Fiverr Gig: Product Descriptions</h3>
+              <p class="muted">Short, converting product descriptions tailored for e-commerce listings (Amazon, Daraz, Shopify).</p>
+              <small style="color:var(--muted)">Example: 2–3 variants per product, SEO keywords included.</small>
+            </article>
+
+            <article class="writing-item">
+              <h3>Blog Posts & Articles</h3>
+              <p class="muted">Long-form articles (500–2,000+ words) with research, headings, and simple on-page SEO.</p>
+            </article>
+
+            <article class="writing-item">
+              <h3>CVs, Cover Letters & LinkedIn</h3>
+              <p class="muted">Professional resumes and cover letters that highlight achievements and get attention.</p>
+            </article>
+
+            <article class="writing-item">
+              <h3>Social Media Captions</h3>
+              <p class="muted">Short, catchy captions for Instagram, Facebook, and product ads.</p>
+            </article>
+
+            <article class="writing-item">
+              <h3>Urdu Creative Writing</h3>
+              <p class="muted">Poems, short stories, and ad copy written elegantly in Urdu — ready for local audiences.</p>
+            </article>
+
+            <article class="writing-item">
+              <h3>Proofreading & Editing</h3>
+              <p class="muted">Grammar, clarity, and tone edits for existing drafts.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card right-card">
+        <h3 id="samples">Featured Samples</h3>
+        <div class="download">
+          <div class="sample">
+            <div class="dot">1</div>
+            <div>
+              <strong>Product Description — Veloura Shoes</strong>
+              <div style="color:var(--muted);margin-top:6px">Short, persuasive description used for e-commerce listings. <a href="#" style="color:var(--accent);text-decoration:none">View</a> • <a href="#" style="color:var(--accent);text-decoration:none">Download</a></div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div class="dot">2</div>
+            <div>
+              <strong>Gig Description — Fiverr-ready</strong>
+              <div style="color:var(--muted);margin-top:6px">A ready-to-paste gig description with FAQs and packages. <a href="#" style="color:var(--accent);text-decoration:none">View</a></div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div class="dot">3</div>
+            <div>
+              <strong>Blog Post — How to Care for Leather Shoes</strong>
+              <div style="color:var(--muted);margin-top:6px">SEO-friendly article in English with headings and meta description. <a href="#" style="color:var(--accent);text-decoration:none">View</a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:16px">
+          <strong>Ready-to-use Gigs</strong>
+          <p style="color:var(--muted);margin-top:8px">Copy these into your Fiverr gig pages to increase conversions. I can customize each for your brand and keywords.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <div class="card">
+        <h3>Contact & Hire</h3>
+        <p style="color:var(--muted)">Quick ways to get in touch. Prefer WhatsApp for fast replies.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+          <div class="card" style="background:transparent;padding:12px;border:1px solid rgba(255,255,255,0.02)">
+            <strong>WhatsApp</strong>
+            <div style="color:var(--muted);margin-top:6px">Message me at <a href="https://wa.me/923327600838" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">+92 332 760 0838</a></div>
+          </div>
+
+          <div class="card" style="background:transparent;padding:12px;border:1px solid rgba(255,255,255,0.02)">
+            <strong>Fiverr</strong>
+            <div style="color:var(--muted);margin-top:6px"><a href="https://www.fiverr.com/your-fiverr-profile" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">Open Fiverr profile</a></div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted)">or email: <a href="mailto:abeerah@example.com" style="color:var(--accent);text-decoration:none">abeerah@example.com</a></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Abeerah — Freelance Writer • Ready-to-use Fiverr writings
+    </footer>
+  </div>
+
+  <!-- WhatsApp floating chat button (opens WhatsApp) -->
+  <a class="whatsapp-btn" href="https://wa.me/923327600838?text=Assalamualaikum%20Abeerah%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20hire%20you%20for%20a%20gig." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M20.52 3.48A11.93 11.93 0 0 0 12.03.75C6.01.75 1.5 5.64 1.5 11.25c0 1.98.52 3.86 1.5 5.54L.75 23.25l6.78-1.77a11.3 11.3 0 0 0 4.5.93c6.02 0 10.53-4.89 10.53-10.5 0-2.8-1.03-5.4-2.29-7.14z" fill="#052215" opacity="0.08"/>
+      <path d="M12.03 22.5c-1.44 0-2.86-.37-4.12-1.06l-2.46.64.66-2.46A10.02 10.02 0 0 1 2.25 11.24C2.25 6.11 6.86 1.5 12.03 1.5c5.17 0 9.78 4.61 9.78 9.74 0 5.14-4.61 9.26-9.78 9.26z" fill="white"/>
+      <path d="M17.4 14.1c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2 0-.37-.05-.52-.05-.15-.68-1.64-.94-2.25-.24-.6-.48-.52-.68-.54-.18-.02-.38-.02-.58-.02s-.52.07-.8.37c-.28.3-1.06 1.03-1.06 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.12 3.22 5.13 4.51 3.01 1.28 3.01.85 3.56.8.55-.05 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.56-.35z" fill="#052215"/>
+    </svg>
+    Chat on WhatsApp
+  </a>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
