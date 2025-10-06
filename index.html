@@ -19,4 +19,121 @@
     *{box-sizing:border-box}
     body{margin:0;background:linear-gradient(180deg,var(--bg) 0%, #fff 100%);color:var(--text);-webkit-font-smoothing:antialiased}
     .container{max-width:1000px;margin:28px auto;padding:22px}
-    header{display:flex;al
+    header{display:flex;align-items:center;gap:18px;padding:18px;background:linear-gradient(90deg,var(--accent-2),#fff);border-radius:14px;box-shadow:0 8px 30px rgba(141,94,116,0.08)}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:50%;overflow:hidden;flex-shrink:0;border:4px solid #fff;box-shadow:0 6px 18px rgba(160,120,140,0.12)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    nav{margin-right:auto}
+    nav a{color:var(--text);text-decoration:none;margin-left:14px;padding:8px 12px;border-radius:10px;font-weight:600}
+    nav a.cta{background:linear-gradient(90deg,var(--accent),#b46da8);color:white}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(64,38,53,0.06);border:1px solid rgba(0,0,0,0.02)}
+    .intro h2{margin:0 0 8px;font-size:18px}
+    .intro p{color:var(--muted);line-height:1.6}
+    .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#b46da8);color:white}
+    .btn.secondary{background:transparent;border:1px solid rgba(128,92,116,0.08);color:var(--text)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .feature{background:linear-gradient(180deg,#fff,#fff);padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.02);text-align:center}
+    .right .meta{display:flex;flex-direction:column;gap:8px}
+    .sample-list{margin-top:10px;display:flex;flex-direction:column;gap:10px}
+    .sample{display:flex;gap:12px;align-items:center}
+    .sample .num{width:38px;height:38px;border-radius:8px;background:linear-gradient(90deg,#f7e7f2,#fbeef7);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--text)}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      nav{display:none}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+    }
+    /* small RTL polish */
+    html[dir="rtl"] header{direction:rtl}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <!-- avatar image - change URL if you want custom -->
+          <img src="https://i.pinimg.com/736x/9f/56/69/9f5669c7a8d441d588cb5c2f8e7f81b1.jpg" alt="Abeerah Avatar">
+        </div>
+        <div>
+          <h1>Abeerah — لکھاری · Prompt Engineer</h1>
+          <p class="lead">کہانیاں، prompts، اور creative ideas — اردو اور انگریزی میں</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="#prompts">Ideas / Prompts</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>السلام علیکم — میں ہوں Abeerah</h2>
+        <p>میں prompt engineering اور creative writing میں دلچسپی رکھتی ہوں۔ میری تحریریں اکثر AI-ideas سے متاثر ہوتی ہیں — کہانیاں جو بچوں اور بڑوں دونوں کے دل چھو لیں۔ یہاں میری بہترین تحریریں اور prompts ملیں گے۔</p>
+
+        <div class="actions">
+          <a class="btn primary" href="stories.html">📖 Read Stories</a>
+          <a class="btn secondary" href="#prompts">💡 View Prompts</a>
+          <a class="btn secondary" href="#contact">✉️ Contact</a>
+        </div>
+
+        <div class="features">
+          <div class="feature"><strong>Urdu & English</strong><div style="color:var(--muted);margin-top:6px">دو زبانوں میں لکھتی ہوں</div></div>
+          <div class="feature"><strong>Fiverr-ready</strong><div style="color:var(--muted);margin-top:6px">Gig descriptions & samples</div></div>
+        </div>
+      </div>
+
+      <aside class="card right">
+        <div class="meta">
+          <strong>Featured Samples</strong>
+          <div class="sample-list">
+            <div class="sample"><div class="num">1</div><div><strong>Story — The Brave Girl Amira</strong><div style="color:var(--muted);font-size:13px">A short heartwarming children's story. <a href="stories.html" style="color:var(--accent);text-decoration:none">Read</a></div></div></div>
+
+            <div class="sample"><div class="num">2</div><div><strong>Prompt Pack — Story Starters</strong><div style="color:var(--muted);font-size:13px">Creative prompts for fairy-tales & AI writing.</div></div></div>
+
+            <div class="sample"><div class="num">3</div><div><strong>Fiverr Gig — Product Descriptions</strong><div style="color:var(--muted);font-size:13px">High-converting product copy examples.</div></div></div>
+          </div>
+
+          <div style="margin-top:14px">
+            <strong id="prompts">Ideas / Prompts</strong>
+            <p style="color:var(--muted);margin:6px 0 0">مثال prompt: "Write a children's bedtime story about a tiny lantern that finds its glow — Urdu, 600 words."</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Contact & Hire</h3>
+        <p style="color:var(--muted);margin:0 0 12px">WhatsApp یا Fiverr کے ذریعے رابطہ کریں — نیچے گھنٹہ بند ہیں:</p>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px" class="card" >
+            <strong>WhatsApp</strong>
+            <div style="color:var(--muted);margin-top:6px"><a href="https://wa.me/923327600838" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">+92 332 760 0838</a></div>
+          </div>
+          <div style="flex:1;min-width:220px" class="card" >
+            <strong>Fiverr</strong>
+            <div style="color:var(--muted);margin-top:6px"><a href="https://www.fiverr.com/your-fiverr-profile" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">Open Fiverr Profile</a></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Abeerah — All rights reserved
+    </footer>
+  </div>
+
+  <script>document.getElementById('yr').innerText = new Date().getFullYear();</script>
+</body>
+</html>
